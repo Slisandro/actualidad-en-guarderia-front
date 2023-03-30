@@ -1,25 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Box, Typography } from '@mui/material';
+import AppBar from './common/components/AppBar';
+import { useTheme } from '@mui/material/styles';
+import { Route, Routes } from 'react-router-dom'
+import Dashboard from './common/ui/dashboard';
+import ContainerUsers from './modules/users/ui/container-users';
+import ContainerCourses from './modules/courses/ui/container-courses';
+import ContainerBills from './modules/bills/ui/container-bills';
+import ContainerDataLoader from './modules/data-loader/ui/container-data-loader';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box sx={{ width: "100%", minHeight: "95vh", height: "max-content" }}>
+      <AppBar />
+      <Routes>
+        <Route 
+          path="/users"
+          Component={() => <ContainerUsers />}
+        />
+        <Route 
+          path="/bills"
+          Component={() => <ContainerBills />}
+        />
+        <Route 
+          path="/courses"
+          Component={() => <ContainerCourses />}
+        />
+        <Route 
+          path="/data-loader"
+          Component={() => <ContainerDataLoader />}
+        />
+        <Route 
+          path="/"
+          Component={() => <Dashboard />}
+        />
+      </Routes>
+    </Box>
   );
 }
 
