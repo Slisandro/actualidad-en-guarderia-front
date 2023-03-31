@@ -1,4 +1,4 @@
-const Routes = [
+export const Routes = [
 	{
 		label: "Cursos",
 		path: "/courses"
@@ -16,5 +16,3 @@ const Routes = [
 		path: "/data-loader"
 	}
 ];
-
-export default Routes;

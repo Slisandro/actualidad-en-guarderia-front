@@ -1,14 +1,12 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import AppBar from './common/components/AppBar';
-import { useTheme } from '@mui/material/styles';
 import { Route, Routes } from 'react-router-dom'
 import Dashboard from './common/ui/dashboard';
 import ContainerUsers from './modules/users/ui/container-users';
 import ContainerCourses from './modules/courses/ui/container-courses';
 import ContainerBills from './modules/bills/ui/container-bills';
 import ContainerDataLoader from './modules/data-loader/ui/container-data-loader';
-
 
 function App() {
   return (

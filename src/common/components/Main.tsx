@@ -1,6 +1,5 @@
 import React, { ReactNode } from 'react';
 import { Box } from '@mui/material';
-import { JsxElement } from 'typescript';
 
 export default function Main ({
     children

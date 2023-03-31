@@ -4,14 +4,12 @@ import Box from '@mui/material/Box';
 import MenuItem from '@mui/material/MenuItem';
 import Divider from '@mui/material/Divider';
 import { Link } from 'react-router-dom';
-import { useTheme } from '@mui/material/styles';
 
 import useRoutesTypes from '../hooks/routes-types-hook';
 import { Route } from '../models/route-model';
 
 export default function AppBarComponent() {
 	const menuItems: Route[] = useRoutesTypes();
-	const theme = useTheme();
 
 	return (
 	    <AppBar 

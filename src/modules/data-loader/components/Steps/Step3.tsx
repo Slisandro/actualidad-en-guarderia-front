@@ -1,15 +1,9 @@
 
 import { 
     Grid, 
-    InputLabel, 
-    MenuItem, 
-    Select, 
     TextField,
     FormControl,
-    Button,
-    Typography
 } from '@mui/material';
-import Add from '@mui/icons-material/Add';
 
 export default function Step3 (props: { 
     state: { 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardContent, CardHeader, Grid, List, ListItem, Typography } from '@mui/material';
+import { Card, CardContent, CardHeader, Grid, List, ListItem } from '@mui/material';
 import Main from '../components/Main';
 
 export default function Dashboard ( ) {

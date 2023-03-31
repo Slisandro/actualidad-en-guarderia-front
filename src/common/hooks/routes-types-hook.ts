@@ -1,4 +1,4 @@
-import Routes from '../enums/routes-enum';
+import { Routes } from "../enums";
 
 const useRoutesTypes = () => {
 	return Routes
